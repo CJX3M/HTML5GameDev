@@ -1,5 +1,6 @@
 #zonaJuego{
-	background: #e0ffe0;
+	background: #e0ffe0 center url(../images/field.jpg);
+	background-size: 400px 200px;
 	width: 400px;
 	height: 200px;
 	position: relative;
@@ -7,5 +8,22 @@
 }
 #pelota{
 	background: #ffb;
-	wi
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 150px;
+	top: 100px;
+	border-radius: 10px;
+}
+.paleta{
+	background: #bbf;
+	left: 50px;
+	top: 70px;
+	position: absolute;
+	width: 20px;
+	height: 70px;
+}
+#paletaB{
+	left: 320px;
+	top: 20px;
 }
