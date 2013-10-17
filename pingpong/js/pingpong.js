@@ -116,15 +116,13 @@ function movePaddles(){
 		paletaAbajo($("#paletaA"));
 }
 
-function paletaArriba(paleta)
-{
+function paletaArriba(paleta){
 	var top = parseInt(paleta.css("top"));
 	if(top > 0)
 		paleta.css("top", top-5);
 }
 
-function paletaAbajo(paleta)
-{
+function paletaAbajo(paleta){
 	var top = parseInt(paleta.css("top"));
 	var height = paleta.height();
 	if(top + height > $("#zonaJuego").height()) return;
