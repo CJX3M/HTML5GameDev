@@ -1,0 +1,78 @@
+body{
+	text-align:center;
+}
+
+#juego{
+	border-radius: 10px;
+	border: 1px solid #666;
+	background: #232 url(../imagenes/tabla.jpg);
+	width: 380px;
+	height: 380px;
+	margin: 0 auto;
+}
+
+#cartas{
+	position: relative;
+	width: 380px;
+	height: 380px;
+	left: 30px;
+	top: 30px;
+}
+
+.carta{
+	-webkit-perspective: 600;
+	width: 67px;
+	height: 95px;
+	position: absolute;
+}
+
+.cara{
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transition: all .3s;
+	-webkit-backface-visibility: hidden;
+}
+
+.frente{
+	background: #999 url(../imagenes/cartas.png) -544px -385px;
+	z-index: 10;	
+}
+
+.atras{
+	background: #efefef url(../imagenes/cartas.png);
+	-webkit-transform: rotate3d(0,1,0, -180deg);
+	z-index: 8;
+}
+
+.carta-volteada .frente{
+	-webkit-transform: rotate3d(0, 1, 0, 180deg);
+	z-index: 8;
+}
+
+.carta-volteada .atras{
+	-webkit-transform: rotate3d(0, 1, 0, 0deg);
+	z-index: 10;
+}
+
+.carta:hover .cara , .carta-volteada .cara{
+	-webkit-box-shadow: 0 0 10px #aaa;
+}
+
+.carta-removida{
+	opacity: 0;
+}
+
+.cartaKA{background-position: -69px 0}
+.cartaQA{background-position: -136px 0}
+.cartaJA{background-position: -205px 0}
+.cartaKB{background-position: -204px -97px}
+.cartaQB{background-position: -271px -97px}
+.cartaJB{background-position: -338px -97px}
+.cartaKC{background-position: -339px -194px}
+.cartaQC{background-position: -406px -194px}
+.cartaJC{background-position: -476px -194px}
+.cartaKD{background-position: -476px -288px}
+.cartaQD{background-position: -543px -288px}
+.cartaJD{background-position: -605px -288px}

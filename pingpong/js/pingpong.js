@@ -19,13 +19,12 @@ pingpong.ball = {
 	y: 100,
 	directionX: 1,
 	directionY: 1,
-}
-pingpong.ball.positionX = function(){
-	return this.x + this.speed * this.directionX;
-}
-
-pingpong.ball.positionY = function(){
-	return this.y + this.speed * this.directionY;
+	positionX: function(){
+					return this.x + this.speed * this.directionX;
+				},
+	positionY: function(){
+					return this.y + this.speed * this.directionY;
+				}
 }
 
 $(function(){
